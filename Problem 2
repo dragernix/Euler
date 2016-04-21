@@ -1,0 +1,11 @@
+fibo1 = 1
+fibo2 = 1
+curr = 1
+sum = 0
+while curr < 4000000:
+    if curr%2==0:
+        sum = sum + curr
+    fibo1 = fibo2
+    fibo2 = curr
+    curr = fibo1 + fibo2
+print(sum)
